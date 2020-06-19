@@ -12,7 +12,7 @@ _The following folders are contained within the Develop directory_
 
 - *user.js* - Creates our user model so that we can store user information within the database. We are using the bcrypt npm package to hash our users password to protect it before it is stored in the database.
 
-*see example of a hashed password*
+*example of a hashed password*
 ![hashedpassword](hshdPsswrdEx.png)
 
 #### ***node_modules*** -- Contains all dependencies for our project
@@ -39,7 +39,7 @@ _The following folders are contained within the Develop directory_
 
 #### ***package-lock.json*** -- This is automatically generated for any operations where npm modifies the node_modules tree, or package.json. This is used to lock dependencies to a specific version number.
 
-#### ***server.js*** -- Sets up our server to listen to requests from the client. Our port is set up and we require our models for sync. This file require express session to keep track of our users login status. We require our api and html routes and sync our database.
+#### ***server.js*** -- Sets up our server to listen to requests from the client. Our port is set up and we require our models for sync. This file requires express session to keep track of our users login status. We require our api and html routes and sync our database.
 
 ---
  Changes I would add:
