@@ -16,8 +16,6 @@ _The following folders are contained within the Develop directory_
 *example of a hashed password*
 ![hashedpassword](hshdPsswrdEx.png)
 
-#### ***node_modules*** -- Contains all dependencies for our project
-
 #### ***public*** -- Contains the following files:
 1.  *js* contains:
 - *login.js* - Validation for email/password that is entered by the user takes place in this file. We have a loginUser function which does a `POST` to a api/login route and redirects us to the members page.
