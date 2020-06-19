@@ -3,9 +3,10 @@
 _The following folders are contained within the Develop directory_
 ***
 #### ***config*** -- Contains the following files:
-- *middleware* folder - Holds the *isAuthenticated.js* file which contains a function that will be used as middleware in our html-routes file, this function has 3 parameters - the third parameter being the function that will be called by `next()` if the user is logged in, otherwise, the user is redirected to the login page.
-- *config.json* - Contains properties for the development, test, and production environments.
-- *passport.js* - The models folder is required within this file and Local Strategy is used so that our user can sign in with a username or email and a password. The npm password package is used to authenticate requests. There is validation within this file for username, email, and password usage.
+1. *middleware* contains:
+- *isAuthenticated.js* - Contains a function that will be used as middleware in our html-routes file, this function has 3 parameters - the third parameter being the function that will be called by `next()` if the user is logged in, otherwise, the user is redirected to the login page.
+2. *config.json* - Contains properties for the development, test, and production environments.
+3. *passport.js* - The models folder is required within this file and Local Strategy is used so that our user can sign in with a username or email and a password. The npm password package is used to authenticate requests. There is validation within this file for username, email, and password usage.
 
 #### ***models*** -- Contains the following files:
 - *index.js* - Created by sequelize cli - makes it easier for us to require our models by putting model information in a db object that is put in modules.exports - this allows us to access all our models by requiring just the directory this file is in, models. We are using dotenv so that we do not share our database login credentials - which is then required in the server.js file. 
